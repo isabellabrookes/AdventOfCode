@@ -11,7 +11,7 @@ const modules = fs
 const part1 = () => {
   const fuelRequirements = module => Math.floor(module / 3) - 2;
   const total = modules
-    .map(a => fuelRequirements(a))
+    .map(module => fuelRequirements(module))
     .reduce((a, b) => a + b, 0);
 
   return total;
@@ -27,8 +27,8 @@ const part2 = () => {
     return fuelRequirements(fuelRequired);
   };
   const total = modules
-    .map(a => {
-      const result = fuelRequirements(a);
+    .map(module => {
+      const result = fuelRequirements(module);
       totalFuelRequired = 0;
       return result;
     })
