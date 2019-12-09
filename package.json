@@ -1,0 +1,30 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "Advent of Code",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "npm run start:2019",
+    "start:2019": "node 2019/index.js"
+  },
+  "keywords": [
+    "AOC",
+    "AdventOfCode",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Isabella Brookes",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^1.19.1"
+  }
+}
