@@ -2,13 +2,12 @@ const fs = require("fs");
 const path = require("path");
 
 const filePath = path.join(__dirname, "input.txt");
-const modules = fs
+const modulesFromFile = fs
   .readFileSync(filePath)
   .toString()
   .split("\n");
-// const modules = ["1969", "100756"];
 
-const part1 = () => {
+const part1 = modules => {
   const fuelRequirements = module => Math.floor(module / 3) - 2;
   const total = modules
     .map(module => fuelRequirements(module))
@@ -17,7 +16,7 @@ const part1 = () => {
   return total;
 };
 
-const part2 = () => {
+const part2 = modules => {
   let totalFuelRequired = 0;
   const fuelRequirements = module => {
     const moduleInt = parseInt(module, 10);
@@ -38,5 +37,8 @@ const part2 = () => {
 };
 
 console.log("## Day 1");
-console.log("Part 1: ", part1());
-console.log("Part 2: ", part2());
+console.log("Part 1: ", part1(modulesFromFile));
+console.log("Part 2: ", part2(modulesFromFile));
+
+exports.day1Part1 = part1;
+exports.day1Part2 = part2;
