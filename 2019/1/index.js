@@ -38,6 +38,7 @@ const part2 = modules => {
   return total;
 };
 
+console.log("#2019");
 console.log("## Day 1");
 console.log("Part 1: ", part1(modulesFromFile));
 console.log("Part 2: ", part2(modulesFromFile));
