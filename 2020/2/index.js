@@ -44,7 +44,7 @@ const part2 = input => {
   return count;
 }
 
-console.log("## Day 1" );
+console.log("## Day 2" );
 console.log("## Part 1", part1(inputFromFile));
 console.log("## Part 2", part2(inputFromFile));
 
